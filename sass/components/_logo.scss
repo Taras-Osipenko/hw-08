@@ -1,0 +1,19 @@
+.header__logo {
+    margin-left: 0;
+    margin-right: 92px;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: $logo-font;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: $accent-color;
+}
+
+.logo__part {
+    color: $second-logo-color;
+}

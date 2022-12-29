@@ -1,0 +1,17 @@
+.header {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    border: 1px solid #ECECEC;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+.header__conteiner {
+    @extend %conteiner;
+    align-items: center;
+    padding-top: 0;
+    height: 80px;
+}

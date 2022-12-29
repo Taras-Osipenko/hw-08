@@ -1,0 +1,120 @@
+.our-command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: $btn-background-color;
+
+}
+
+.our-command__conteiner {
+    @extend %conteiner;
+    display: block;
+
+}
+
+.social-list {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    height: 44px;
+    list-style: none;
+}
+
+.social-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: $main-icon-color;
+    border-radius: 50%;
+
+    transition-property: background-color, fill;
+    transition-duration: $effect-time;
+    transition-timing-function: $effect-function;
+    transition-delay: $effect-time;
+
+}
+
+.social-list__link {
+
+    &:hover, &:focus{
+    background-color: $accent-color;
+    fill: $main-background-color;}
+}
+
+.social-list .social-list__item+.social-list__item {
+
+    margin-left: 10px;
+}
+
+.our-command__list {
+    display: flex;
+    list-style: none;
+}
+
+.our-command__item {
+    width: 270px;
+    padding: 0 0;
+    background: $main-background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.our-command__item:first-child {
+    margin-left: 0;
+}
+
+.our-command__item:last-child {
+    margin-right: 0;
+}
+
+.our-command__list .our-command__item+.our-command__item {
+    margin-left: 30px;
+}
+
+
+.command-card {
+
+    padding: 30px 0;
+}
+
+.command-card__text {
+    margin-top: 10px;
+}
+
+.our-command__title {
+
+
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $main-text-color;
+}
+
+.command-card__title {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $main-text-color;
+}
+
+.command-card__text {
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $second-text-color;}
