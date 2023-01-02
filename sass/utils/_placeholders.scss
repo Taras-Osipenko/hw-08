@@ -6,15 +6,24 @@ ul {
 }
 
 %conteiner {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    // display: flex;
-    // margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+
  
-    @media (min-width: 480px) {
+    @media screen and (min-width: 480px) {
             width: 480px;
         }
+    @media screen and (min-width: 768px) {
+           width: 768px;
+     }
+    @media screen and (min-width: 1200px) {
+    width: 1200px;
+    }
+
+
+
 }
 
 img {
@@ -46,4 +55,4 @@ white-space: nowrap;
 clip-path: inset(100%);
 clip: rect(0 0 0 0);
 overflow: hidden;
-        }
+}
