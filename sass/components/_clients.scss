@@ -1,0 +1,16 @@
+.clients__conteiner {
+    @extend %conteiner;
+}
+.clients__title {
+    text-align: center;
+
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients__item {
+    width: 210px;
+}

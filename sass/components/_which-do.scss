@@ -1,0 +1,12 @@
+.which-do {
+    @media screen and (max-width: 1200px) {
+     display: none;
+    }
+}
+
+.which-do__conteiner {
+    @extend %conteiner;
+}
+.which-do__title {
+    text-align: center;
+}
