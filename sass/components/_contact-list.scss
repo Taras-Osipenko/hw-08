@@ -1,0 +1,66 @@
+
+
+.contact-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-list__icon {
+margin-right: 10px;
+}
+
+.contact-list {
+display: flex;
+margin-top: 0;
+margin-bottom: 0;
+align-items: center;
+}
+
+.contact-list {
+    margin-left: auto;
+}
+
+
+.contact-list>li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-list__link {
+display: flex;
+padding-top: 32px;
+padding-bottom: 32px;
+
+text-decoration: none;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+transition-property: color;
+transition-duration: $effect-time;
+transition-timing-function: $effect-function;
+transition-delay: $effect-time;
+
+color: $main-text-color;
+fill: $second-text-color;
+}
+
+
+.contact-list__icon {
+
+transition-property: fill;
+transition-duration: $effect-time;
+transition-timing-function: $effect-function;
+transition-delay: $effect-time;
+}
+
+.contact-list__link {
+    color: $second-text-color;
+}
+
+.contact-list__link { 
+    &:hover, &:focus {
+    color: $accent-color;
+    fill: $accent-color;}
+}
