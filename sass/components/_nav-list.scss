@@ -15,11 +15,15 @@
 }
 
 .nav-list {
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    align-items: center;
 
+    @media screen and (min-width: 768px)
+    {
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 0;
+        align-items: center;   
+    }
+    
 }
 
 .nav-list__item:not(:last-child) {

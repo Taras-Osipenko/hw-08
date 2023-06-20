@@ -1,4 +1,9 @@
 .header {
+    @media screen and (min-width: 768px) {
+
+    
+   
+
     padding-top: 0;
     padding-bottom: 0;
 
@@ -6,12 +11,20 @@
     border-top: none;
     border-left: none;
     border-right: none;
+}
 
 }
 
 .header__conteiner {
     @extend %conteiner;
-    align-items: center;
-    padding-top: 0;
-    height: 80px;
+    @media screen and (min-width: 768px) {
+
+
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+        height: 80px;
+        
+    }
+   
 }

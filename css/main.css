@@ -64,30 +64,34 @@ body {
   color: #757575;
 }
 
-.header {
-  padding-top: 0;
-  padding-bottom: 0;
-  border: 1px solid #ECECEC;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 1px solid #ECECEC;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
 }
 
-.header__conteiner {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 0;
-  height: 80px;
+@media screen and (min-width: 768px) {
+  .header__conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0;
+    height: 80px;
+  }
 }
 
 .contact-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -98,21 +102,19 @@ body {
 }
 
 .contact-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact-list {
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .contact-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-height: 80px;
+    margin-left: 96px;
+  }
 }
 
 .contact-list > li:not(:last-child) {
+  margin-bottom: 10px;
   margin-right: 50px;
 }
 
@@ -120,8 +122,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -174,15 +174,17 @@ body {
   border-radius: 2px;
 }
 
-.nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .nav-list__item:not(:last-child) {
@@ -223,7 +225,7 @@ body {
 }
 
 .header__logo {
-  margin-left: 0;
+  margin-left: 15px;
   margin-right: 92px;
 }
 
