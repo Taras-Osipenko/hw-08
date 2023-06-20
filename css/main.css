@@ -592,7 +592,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .benefits__item {
-    width: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
 
@@ -734,7 +735,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .our-command__item {
-    width: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
 
@@ -800,8 +802,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
-
+@media screen and (min-width: 768px) {
+  .clients__list {
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+  }
+}
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
