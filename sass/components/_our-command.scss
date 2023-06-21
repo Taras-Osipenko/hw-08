@@ -1,8 +1,10 @@
 .our-command {
-    // padding-top: 94px;
-    // padding-bottom: 94px;
     background: $btn-background-color;
-
+    @media screen and (max-width: 1170px) {
+        padding: 60px 15px;
+                
+    }
+    padding: 94px 215px;
 }
 
 .our-command__conteiner {
@@ -52,16 +54,26 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        list-style: none;   
+        list-style: none; 
+        margin: -15px;
+
     }
 }
 
 .our-command__item {
     @media screen and (min-width: 768px) {
-        flex-basis: 50%;
-       
+      width: calc((100% - 2*30px)/2);
+       margin: 15px;
     }
-    
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center; /* Для горизонтального вирівнювання по центру */
+    justify-content: center; /* Для вертикального вирівнювання по центру */
+
+    &:not(:last-child){
+       margin-bottom: 30px ;}
+
     background: $main-background-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -91,10 +103,7 @@
 }
 
 .our-command__title {
-
-
     margin-bottom: 50px;
-
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -124,3 +133,10 @@
     letter-spacing: 0.03em;
 
     color: $second-text-color;}
+
+    .our-command__foto {
+
+        display: block;
+        margin: 0 auto; /* Для горизонтального вирівнювання по центру */
+        vertical-align: middle; /* Для вертикального вирівнювання по центру */
+      }
