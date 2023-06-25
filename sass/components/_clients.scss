@@ -22,33 +22,60 @@
     color: $main-text-color;
 
 }
-
+// 
 .clients__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    margin: -15px;
-   
 }
+
 .clients__item {
-    @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 2*30px)/2);
-        margin: 15px; 
-        height: auto;
-     }
+    flex: 0 0 calc(50% - 10px); /* Два елементи в рядку */
+    margin-bottom: 20px;
 }
+
+@media screen and (min-width: 768px) {
+    .clients__item {
+        flex-basis: calc(33.33% - 10px); /* Три елементи в рядку */
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .clients__item {
+        flex-basis: calc(25% - 10px); /* Чотири елементи в рядку */
+    }
+}
+
+
+
+
+// .clients__list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 0 auto;
+//     margin: -15px;
+   
+// }
+// .clients__item {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 0 auto;
+// }
 
 
 .clients__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     box-sizing: border-box;
 
- 
+//     @media screen and (min-width: 768px) {
+//         flex-basis: calc((100% - 2*30px)/2);
+//         margin: 15px; 
+//         height: 92px;
+//      }
 
-    // width: 170px;
-    // height: 92px;
+//     // width: 170px;
+    height: 92px;
     border: 1px solid $main-icon-color;
     border-radius: 4px;
     fill: $main-icon-color;
