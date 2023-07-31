@@ -7,7 +7,11 @@ ul {
 }
 
 .portfolio__conteiner, .footer__conteiner, .clients__conteiner, .our-command__conteiner, .which-do__conteiner, .benefits__conteiner, .hero__conteiner, .header__conteiner {
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
+  text-align: center;
 }
 @media screen and (min-width: 480px) {
   .portfolio__conteiner, .footer__conteiner, .clients__conteiner, .our-command__conteiner, .which-do__conteiner, .benefits__conteiner, .hero__conteiner, .header__conteiner {
@@ -577,7 +581,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   color: #212121;
 }
 
@@ -612,6 +616,10 @@ body {
         flex-basis: calc((100% - 120px) / 4);
     margin: 15px;
   }
+}
+
+.benefits__text-card {
+  text-align: left;
 }
 
 .which-do {
@@ -845,28 +853,36 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
-.clients__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(50% - 10px);
-          flex: 0 0 calc(50% - 10px); /* Два елементи в рядку */
-  margin-bottom: 20px;
+@media screen and (min-width: 1170px) {
+  .clients__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
+.clients__item {
+  -ms-flex-preferred-size: calc(50% - 10px);
+      flex-basis: calc(50% - 10px); /* Два елементи в рядку */
+}
 @media screen and (min-width: 768px) {
   .clients__item {
     -ms-flex-preferred-size: calc(33.33% - 10px);
         flex-basis: calc(33.33% - 10px); /* Три елементи в рядку */
   }
 }
-@media screen and (min-width: 1170px) {
-  .clients__item {
-    -ms-flex-preferred-size: calc(25% - 10px);
-        flex-basis: calc(25% - 10px); /* Чотири елементи в рядку */
-  }
-}
+
 .clients__link {
+  width: 100%;
   height: 92px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; /* Встановіть display: flex для контейнера посилання */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* Центрування елементів по вертикалі */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* Центрування елементів по горизонталі */
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
