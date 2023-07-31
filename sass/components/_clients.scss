@@ -32,20 +32,24 @@
             }
 }
 
-.clients__item {
-   
-    flex-basis:calc(50% - 10px); /* Два елементи в рядку */
+.clients__item {   
+    flex-basis: calc(50% - 30px) ; /* Два елементи в рядку */
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc(33.33% - 10px); /* Три елементи в рядку */
+        flex-basis: calc(33.33% - 30px); /* Три елементи в рядку */
     
     }
-
-
-// @media screen and (min-width: 1170px) {
-//        display: inline-block;;
-//     }
+ &:nth-child(odd) {
+    @media screen and (max-width: 767px) {
+    margin-right: 30px;}
+ }
+ &:nth-child(-n + 4) {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+ }
 }
+}
+
 
 
 
@@ -74,9 +78,8 @@
 }
 
 
-.clients__link {
-
-    &:hover, &:focus{
+.clients__link { 
+    &:hover, &:focus {
     fill: $accent-color;
     border-color: $accent-color;}
 
