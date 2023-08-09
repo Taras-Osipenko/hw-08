@@ -9,13 +9,22 @@
 .footer__conteiner {
     @extend %conteiner;
     align-items: baseline;
+    @media screen and (max-width: 767px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Центрування по вертикалі */
+    }
+    
 
 }
 
 .social-footer {
     margin-left: 70px;
+    @media screen and (max-width: 767px){
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }
-
 .footer__contacts {
     width: 231px;
 }
@@ -131,7 +140,17 @@
 
 .footer-mailling {
 
+    @media screen and (max-width: 767px){
+        display: flex;
+        flex-direction: column; /* Встановлюємо вертикальний напрямок для дочірніх елементів */
+        justify-content: center; /* Центрування по вертикалі */
+        align-items: center; /* Центрування по горизонталі */
+    }
+
+
     margin-left: auto;
+
+    
 }
 
 .footer-mailling__form {

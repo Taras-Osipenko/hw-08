@@ -263,17 +263,26 @@ body {
 }
 
 .hero__conteiner {
-  display: block;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; /* Встановлюємо вертикальний напрямок для дочірніх елементів */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* Центрування по вертикалі */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* Центрування по горизонталі */
 }
 
 .hero__title {
   width: 360px;
-  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -281,10 +290,6 @@ body {
 @media screen and (min-width: 1170px) {
   .hero__title {
     width: 696px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-    margin-top: 0;
   }
 }
 
@@ -924,9 +929,29 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
+@media screen and (max-width: 767px) {
+  .footer__conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; /* Центрування по вертикалі */
+  }
+}
 
 .social-footer {
   margin-left: 70px;
+}
+@media screen and (max-width: 767px) {
+  .social-footer {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .footer__contacts {
@@ -1038,6 +1063,23 @@ body {
 
 .footer-mailling {
   margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .footer-mailling {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; /* Встановлюємо вертикальний напрямок для дочірніх елементів */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; /* Центрування по вертикалі */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Центрування по горизонталі */
+  }
 }
 
 .footer-mailling__form {
