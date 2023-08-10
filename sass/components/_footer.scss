@@ -13,6 +13,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center; /* Центрування по вертикалі */
+        text-align: center; /* Центрування тексту всередині блоку */
     }
     
 
@@ -21,12 +22,21 @@
 .social-footer {
     margin-left: 70px;
     @media screen and (max-width: 767px){
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 60px;
         margin-bottom: 60px;
     }
 }
 .footer__contacts {
     width: 231px;
+
+    @media screen and (max-width: 767px){
+    margin-left: auto;
+    margin-right: auto;
+
+
+    }
 }
 
 .footer-social__link {
@@ -81,6 +91,7 @@
 .footer-address-list,
 .footer__logo {
     margin-right: auto;
+    text-align: center;
 }
 
 .footer-address-list .footer-address-list__item+.footer-address-list__item {
@@ -133,6 +144,12 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
+    @media screen and (max-width: 767px){
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+
     color: $main-background-color;
     margin-bottom: 20px;
 }
@@ -140,21 +157,29 @@
 
 .footer-mailling {
 
+   
+    margin-left: auto;
     @media screen and (max-width: 767px){
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         flex-direction: column; /* Встановлюємо вертикальний напрямок для дочірніх елементів */
         justify-content: center; /* Центрування по вертикалі */
         align-items: center; /* Центрування по горизонталі */
     }
-
-
-    margin-left: auto;
-
     
 }
 
 .footer-mailling__form {
     display: flex;
+    @media screen and (max-width: 767px){
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column; /* Встановлюємо вертикальний напрямок для дочірніх елементів */
+        justify-content: center; /* Центрування по вертикалі */
+        align-items: center; /* Центрування по горизонталі */
+    }
 
 }
 
@@ -167,7 +192,11 @@
     border-radius: 4px;
     outline: none;
     background-color: $second-background-color;
-    color: rgba(255, 255, 255, 0.6)
+    color: rgba(255, 255, 255, 0.6);
+    
+    @media screen and (max-width: 767px){
+      width: auto;
+    }
 }
 
 .footer-mailling__btn {
@@ -193,6 +222,14 @@
     transition-duration: $effect-time;
     transition-timing-function: $effect-function;
     transition-delay: $effect-time;
+
+    @media screen and (max-width: 767px){
+
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+     
+    }
 
 }
 

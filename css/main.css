@@ -10,6 +10,8 @@ ul {
   width: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   margin: 0 auto;
   text-align: center;
 }
@@ -941,6 +943,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; /* Центрування по вертикалі */
+    text-align: center; /* Центрування тексту всередині блоку */
   }
 }
 
@@ -949,6 +952,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .social-footer {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 60px;
     margin-bottom: 60px;
   }
@@ -956,6 +961,12 @@ body {
 
 .footer__contacts {
   width: 231px;
+}
+@media screen and (max-width: 767px) {
+  .footer__contacts {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-social__link {
@@ -1011,6 +1022,7 @@ body {
 .footer-address-list,
 .footer__logo {
   margin-right: auto;
+  text-align: center;
 }
 
 .footer-address-list .footer-address-list__item + .footer-address-list__item {
@@ -1060,12 +1072,20 @@ body {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 767px) {
+  .footer-mailling__title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .footer-mailling {
   margin-left: auto;
 }
 @media screen and (max-width: 767px) {
   .footer-mailling {
+    margin-left: auto;
+    margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1087,6 +1107,25 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .footer-mailling__form {
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; /* Встановлюємо вертикальний напрямок для дочірніх елементів */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; /* Центрування по вертикалі */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Центрування по горизонталі */
+  }
+}
 
 .footer-mailling__input {
   padding: 15px 16px;
@@ -1098,6 +1137,11 @@ body {
   outline: none;
   background-color: #2F303A;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 767px) {
+  .footer-mailling__input {
+    width: auto;
+  }
 }
 
 .footer-mailling__btn {
@@ -1128,6 +1172,13 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-delay: 250ms;
           transition-delay: 250ms;
+}
+@media screen and (max-width: 767px) {
+  .footer-mailling__btn {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-mailling__btn:hover, .footer-mailling__btn:focus {
