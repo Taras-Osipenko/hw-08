@@ -10,8 +10,6 @@ ul {
   width: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
   margin: 0 auto;
   text-align: center;
 }
@@ -25,9 +23,15 @@ ul {
     width: 768px;
   }
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1170px) {
   .portfolio__conteiner, .footer__conteiner, .clients__conteiner, .our-command__conteiner, .which-do__conteiner, .benefits__conteiner, .hero__conteiner, .header__conteiner {
-    width: 1140px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
   }
 }
 
@@ -713,9 +717,8 @@ body {
 }
 
 .our-command__conteiner {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .social-list {
@@ -776,6 +779,19 @@ body {
     margin: -15px;
   }
 }
+@media screen and (min-width: 1170px) {
+  .our-command__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 .our-command__item {
   display: block;
@@ -814,6 +830,9 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
   color: #212121;
 }
 
