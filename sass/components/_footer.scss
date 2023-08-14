@@ -54,7 +54,9 @@
         width: 50%;
       
     }
-
+ @media screen and (min-width: 1170px){
+    text-align: left;
+ }
 }
 
 .footer-social__link {
@@ -103,8 +105,19 @@
     color: $main-background-color;
 
     text-transform: uppercase;
+
+    @media screen and (min-width: 1170px) {
+        text-align: left;
+        
+    }
 }
 
+
+.footer-address-list__item {
+    @media screen and (min-width: 1170px) {
+        text-align: left;
+    } 
+}
 
 .footer-address-list,
 .footer__logo {
@@ -170,6 +183,11 @@
 
     color: $main-background-color;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1170px) {
+        text-align: left;
+        
+    }
 }
 
 
