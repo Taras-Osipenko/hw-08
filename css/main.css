@@ -289,7 +289,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 767px) {
   .hero__title {
     width: 696px;
   }
@@ -703,6 +703,8 @@ body {
 .our-command {
   background: #F5F4FA;
   padding: 94px 215px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 1170px) {
   .our-command {
@@ -712,6 +714,8 @@ body {
 
 .our-command__conteiner {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-list {
@@ -1151,7 +1155,7 @@ body {
             align-items: center; /* Центрування по горизонталі */
   }
 }
-@media screen and (max-width: 1169px) {
+@media screen and (min-width: 768px) {
   .footer-mailling {
     margin-top: 60px;
     margin-left: auto;

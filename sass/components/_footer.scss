@@ -204,7 +204,7 @@
         justify-content: center; /* Центрування по вертикалі */
         align-items: center; /* Центрування по горизонталі */
     }
-    @media screen and (max-width: 1169px) {
+    @media screen and (min-width: 768px) {
         margin-top: 60px;
         margin-left: auto;
         margin-right: auto;
