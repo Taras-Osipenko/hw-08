@@ -9,23 +9,37 @@
 .footer__conteiner {
     @extend %conteiner;
     align-items: baseline;
-    @media screen and (max-width: 767px){
+  
         display: flex;
         flex-direction: column;
         justify-content: center; /* Центрування по вертикалі */
         text-align: center; /* Центрування тексту всередині блоку */
-    }
-    
+        @media screen and (min-width: 768px) {
+            flex-direction: row;  
+            flex-wrap: wrap; 
+        }
+   
 
 }
 
 .social-footer {
-    margin-left: 70px;
+    @media screen and (min-width: 1169px) {
+        margin-left: 70px;   
+    }
+    
     @media screen and (max-width: 767px){
         margin-left: auto;
         margin-right: auto;
         margin-top: 60px;
         margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 1169px){
+        width: 50%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+
     }
 }
 .footer__contacts {
@@ -35,8 +49,12 @@
     margin-left: auto;
     margin-right: auto;
 
-
     }
+    @media screen and (max-width: 1169px){
+        width: 50%;
+      
+    }
+
 }
 
 .footer-social__link {
@@ -160,6 +178,7 @@
    
     margin-left: auto;
     @media screen and (max-width: 767px){
+        width: 94%;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -167,12 +186,19 @@
         justify-content: center; /* Центрування по вертикалі */
         align-items: center; /* Центрування по горизонталі */
     }
-    
+    @media screen and (max-width: 1169px) {
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
 }
 
 .footer-mailling__form {
     display: flex;
     @media screen and (max-width: 767px){
+
+        width: 94%;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -180,6 +206,14 @@
         justify-content: center; /* Центрування по вертикалі */
         align-items: center; /* Центрування по горизонталі */
     }
+  @media screen and (max-width: 1169px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
 
 }
 
@@ -195,14 +229,18 @@
     color: rgba(255, 255, 255, 0.6);
     
     @media screen and (max-width: 767px){
-      width: auto;
+      width: 94%;
+    }
+    @media screen and (max-width: 1169px) {
+        margin-bottom: 20px;
+
     }
 }
 
 .footer-mailling__btn {
     display: flex;
     align-items: center;
-
+  
 
     font-weight: 700;
     font-size: 16px;

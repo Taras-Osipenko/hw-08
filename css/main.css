@@ -930,25 +930,33 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* Центрування по вертикалі */
+  text-align: center; /* Центрування тексту всередині блоку */
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .footer__conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; /* Центрування по вертикалі */
-    text-align: center; /* Центрування тексту всередині блоку */
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
-.social-footer {
-  margin-left: 70px;
+@media screen and (min-width: 1169px) {
+  .social-footer {
+    margin-left: 70px;
+  }
 }
 @media screen and (max-width: 767px) {
   .social-footer {
@@ -956,6 +964,21 @@ body {
     margin-right: auto;
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1169px) {
+  .social-footer {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -966,6 +989,11 @@ body {
   .footer__contacts {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (max-width: 1169px) {
+  .footer__contacts {
+    width: 50%;
   }
 }
 
@@ -1084,6 +1112,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .footer-mailling {
+    width: 94%;
     margin-left: auto;
     margin-right: auto;
     display: -webkit-box;
@@ -1101,6 +1130,13 @@ body {
             align-items: center; /* Центрування по горизонталі */
   }
 }
+@media screen and (max-width: 1169px) {
+  .footer-mailling {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .footer-mailling__form {
   display: -webkit-box;
@@ -1109,6 +1145,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .footer-mailling__form {
+    width: 94%;
     margin-left: auto;
     margin-right: auto;
     display: -webkit-box;
@@ -1124,6 +1161,21 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; /* Центрування по горизонталі */
+  }
+}
+@media screen and (max-width: 1169px) {
+  .footer-mailling__form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1140,7 +1192,12 @@ body {
 }
 @media screen and (max-width: 767px) {
   .footer-mailling__input {
-    width: auto;
+    width: 94%;
+  }
+}
+@media screen and (max-width: 1169px) {
+  .footer-mailling__input {
+    margin-bottom: 20px;
   }
 }
 
