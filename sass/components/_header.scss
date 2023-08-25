@@ -26,7 +26,7 @@
         height: 80px;
         
     }
-   
+    position: relative;
 }
 
 .menu-button {
@@ -50,8 +50,20 @@
 }
 
 .menu-container {
+     display: none;
+
     background-color: teal;
     padding: 20px;
     text-align: center;
     font-size: 20px;
+    color: antiquewhite;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    &.is-open {
+        display: block;
+    }
 }
+
