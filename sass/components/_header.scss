@@ -35,6 +35,8 @@
     padding: 0;
     border: none;
     background-color: transparent;
+
+    
 }
 
 .menu-button .icon-cross {
@@ -50,9 +52,9 @@
 }
 
 .menu-container {
-     display: none;
+    // display: none;
 
-    background-color: teal;
+    background-color:green;
     padding: 20px;
     text-align: center;
     font-size: 20px;
@@ -65,5 +67,7 @@
     &.is-open {
         display: block;
     }
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
-
