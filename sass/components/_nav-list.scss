@@ -11,7 +11,15 @@
     width: 100%;
     height: 4px;
     background-color: $accent-color;
-    border-radius: 2px;}
+    border-radius: 2px;
+
+
+    @media screen and (max-width: 767px) {
+        display: none
+        
+    }
+}
+  
 }
 
 .nav-list {
@@ -32,6 +40,16 @@
 
 .nav-list__link
 {
+
+    @media screen and (max-width: 767px) {
+        font-size: 40px; 
+        
+    }
+
+
+
+
+
 display: flex;
 padding-top: 32px;
 padding-bottom: 32px;
@@ -49,6 +67,9 @@ transition-delay: $effect-time;
 
 color: $main-text-color;
 fill: $second-text-color;
+
+
+
 }
 
 

@@ -264,6 +264,11 @@ body {
   background-color: #2196F3;
   border-radius: 2px;
 }
+@media screen and (max-width: 767px) {
+  .nav-list__link--current:after {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .nav-list {
@@ -303,6 +308,11 @@ body {
           transition-delay: 250ms;
   color: #212121;
   fill: #757575;
+}
+@media screen and (max-width: 767px) {
+  .nav-list__link {
+    font-size: 40px;
+  }
 }
 
 .nav-list__link:hover, .nav-list__link:focus {
