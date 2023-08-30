@@ -17,6 +17,9 @@
 </symbol>
 
 
+<symbol id="line" viewBox="0 0 1 22">
+<line x1="0.5" x2="0.5" y2="22" stroke="#212121" stroke-opacity="0.2"/>
+</symbol>
 
 
 </defs></svg>

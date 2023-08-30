@@ -8,9 +8,19 @@
 
 .contact-list__icon {
 margin-right: 10px;
+
+@media screen and (max-width: 767px) {
+    display: none;
+}
+
 }
 
 .contact-list {
+    
+    @media screen and (max-width: 767px) {
+        padding-top: 286px;
+    }
+
     @media screen and (min-width: 768px) {
         // display: flex;
         margin-top: 0;
@@ -30,8 +40,6 @@ margin-right: 10px;
 
 .contact-list__link {
 display: flex;
-// padding-top: 32px;
-// padding-bottom: 32px;
 
 text-decoration: none;
 font-weight: 500;
@@ -65,4 +73,45 @@ transition-delay: $effect-time;
     &:hover, &:focus {
     color: $accent-color;
     fill: $accent-color;}
+}
+
+
+.contact-list__link-tel { 
+    @media screen and (max-width: 767px) {
+        font-size: 34px;
+        color: $accent-color;
+    }
+}
+    
+.contact-list__link-mail {
+ @media screen and (max-width: 767px) {
+        font-size: 24px;
+        padding-top: 32px;
+        padding-bottom: 64px;
+    }
+}
+.contact-list {
+    @media screen and (max-width: 767px) {
+       display: flex;
+       flex-direction: column-reverse;
+        
+    }
+}  
+
+.social-header-list {
+    display: flex;
+    list-style: none;
+    @media screen and (min-width: 768px) {
+        display: none
+         
+     }
+}
+
+.social-header__link {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "roboto";
+    font-weight: 600;
+    line-height: 1,22;
+    color: $accent-color;
 }
