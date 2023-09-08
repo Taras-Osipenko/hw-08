@@ -288,10 +288,8 @@ body {
 }
 
 .social-header-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
+  text-align: start;
 }
 @media screen and (min-width: 768px) {
   .social-header-list {
@@ -306,6 +304,11 @@ body {
   font-weight: 600;
   line-height: 1, 22;
   color: #2196F3;
+}
+
+.social-header-list li {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .nav-list__link--current {
