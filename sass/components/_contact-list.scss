@@ -99,8 +99,7 @@ transition-delay: $effect-time;
 }  
 
 .social-header-list {
-    // display: inline-block;
-    // // justify-content: space-between;
+
     list-style: none;
     text-align: start;
    
@@ -117,7 +116,7 @@ transition-delay: $effect-time;
     font-weight: 600;
     line-height: 1,22;
     color: $accent-color;
-    // margin-right: 20px;
+    
    
 }
 .social-header-list li {
