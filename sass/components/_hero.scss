@@ -7,23 +7,56 @@
     margin-left: auto;
     margin-right: auto;
 
+    
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(//images/hero-background.jpg);
-        @media screen and (max-width: 480px){
-            background-image: url(//images/Hero_background/Hero-480p.jpg)
+     url(..//images/Hero_background/Hero-480p.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        
+          background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+           url(..//images/Hero_background/Hero-480p-2x.jpg);
         }
-    background-size: cover;
-    background-color: #C4C4C4;
-    background-repeat: no-repeat;
-    background-position: center;
-    @media screen and (max-width: 767px) {
-        height: 400px;
-        padding-top: 118px;
-        padding-bottom: 118px;
+
+        @media screen and (min-width: 481px){
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+            url(..//images/Hero_background/Hero-768p.jpg);
+        }
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+         
+           background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+           url(..//images/Hero_background/Hero-768p-2x.jpg);
+        }
+        @media screen and (min-width: 769px){
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+            url(..//images/Hero_background/Hero-1170p.jpg);
+        }
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+         
+           background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+           url(..//images/Hero_background/Hero-1170p-2x.jpg);
+        }
+    
+            
+         
+        
+ background-size: cover;
+ background-color: #C4C4C4;
+ background-repeat: no-repeat;
+ background-position: center;
+ @media screen and (max-width: 767px) {
+     height: 400px;
+     padding-top: 118px;
+     padding-bottom: 118px;
        
     }
 
-   }
+}
 
 .hero__conteiner {
     @extend %conteiner;
