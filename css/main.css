@@ -6,25 +6,27 @@ ul {
   margin: 0 0;
 }
 
-.portfolio__conteiner, .footer__conteiner, .clients__conteiner, .our-command__conteiner, .which-do__conteiner, .benefits__conteiner, .hero__conteiner, .header__conteiner {
+.portfolio__conteiner, .footer__conteiner, .clients__conteiner, .our-command__conteiner, .which-do__conteiner, .benefits__conteiner, .hero__conteiner, .header .header__conteiner {
   width: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   margin: 0 auto;
   text-align: center;
 }
 @media screen and (min-width: 480px) {
-  .portfolio__conteiner, .footer__conteiner, .clients__conteiner, .our-command__conteiner, .which-do__conteiner, .benefits__conteiner, .hero__conteiner, .header__conteiner {
+  .portfolio__conteiner, .footer__conteiner, .clients__conteiner, .our-command__conteiner, .which-do__conteiner, .benefits__conteiner, .hero__conteiner, .header .header__conteiner {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .portfolio__conteiner, .footer__conteiner, .clients__conteiner, .our-command__conteiner, .which-do__conteiner, .benefits__conteiner, .hero__conteiner, .header__conteiner {
+  .portfolio__conteiner, .footer__conteiner, .clients__conteiner, .our-command__conteiner, .which-do__conteiner, .benefits__conteiner, .hero__conteiner, .header .header__conteiner {
     width: 768px;
   }
 }
 @media screen and (min-width: 1170px) {
-  .portfolio__conteiner, .footer__conteiner, .clients__conteiner, .our-command__conteiner, .which-do__conteiner, .benefits__conteiner, .hero__conteiner, .header__conteiner {
+  .portfolio__conteiner, .footer__conteiner, .clients__conteiner, .our-command__conteiner, .which-do__conteiner, .benefits__conteiner, .hero__conteiner, .header .header__conteiner {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -85,12 +87,11 @@ body {
     border-right: none;
   }
 }
-
-.header__conteiner {
+.header .header__conteiner {
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .header__conteiner {
+  .header .header__conteiner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -102,7 +103,7 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
-  .header__conteiner {
+  .header .header__conteiner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -117,10 +118,10 @@ body {
     margin-right: auto;
     padding-right: 22px;
     padding-left: 15px;
+    width: auto;
   }
 }
-
-.menu-button {
+.header .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -130,24 +131,20 @@ body {
   background-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .header .menu-button {
     display: none;
   }
 }
-
-.menu-button .icon-cross {
+.header .menu-button .icon-cross {
   display: none;
 }
-
-.menu-button.is-open .icon-cross {
+.header .menu-button.is-open .icon-cross {
   display: block;
 }
-
-.menu-button.is-open .icon-menu {
+.header .menu-button.is-open .icon-menu {
   display: none;
 }
-
-.menu-container {
+.header .menu-container {
   background-color: #fff;
   padding-left: 40px;
   text-align: center;
@@ -156,17 +153,18 @@ body {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .menu-container {
+  .header .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 767px) {
-  .menu-container {
+  .header .menu-container {
     display: none;
     position: absolute;
     top: 100%;
@@ -174,7 +172,7 @@ body {
     width: 100%;
     padding-bottom: 48px;
   }
-  .menu-container.is-open {
+  .header .menu-container.is-open {
     display: block;
   }
 }
@@ -402,6 +400,11 @@ body {
 .header__logo {
   margin-left: 15px;
   margin-right: 92px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 87px;
+  }
 }
 
 .logo {
@@ -888,7 +891,8 @@ body {
 }
 @media screen and (max-width: 1170px) {
   .our-command {
-    padding: 60px 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -898,6 +902,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: auto;
 }
 
 .social-list {
@@ -1045,12 +1050,14 @@ body {
 }
 @media screen and (max-width: 1169px) {
   .clients {
-    padding: 60px 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
 .clients__conteiner {
   display: block;
+  width: auto;
 }
 
 .clients__title {

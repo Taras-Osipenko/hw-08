@@ -1,7 +1,8 @@
 .our-command {
     background: $btn-background-color;
     @media screen and (max-width: 1170px) {
-        padding: 60px 15px;
+        padding-top: 60px;
+        padding-bottom: 60px;
                 
     }
     padding: 94px 0;
@@ -14,6 +15,7 @@
     @extend %conteiner;
     flex-wrap: wrap;
     align-items: center;
+    width: auto;
     
 
 }

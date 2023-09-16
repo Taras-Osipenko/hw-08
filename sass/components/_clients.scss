@@ -1,6 +1,7 @@
 .clients {
     @media screen and (max-width: 1169px) {
-        padding: 60px 15px;   
+        padding-top: 60px;   
+        padding-bottom: 60px;
     }
     padding-top: 94px;
     padding-bottom: 94px;
@@ -9,6 +10,7 @@
 .clients__conteiner {
     @extend %conteiner;
     display: block;
+    width: auto;
 }
 
 .clients__title {

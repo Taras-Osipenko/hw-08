@@ -11,7 +11,7 @@
     border-top: none;
     border-left: none;
     border-right: none;
-}
+  
 
 }
 
@@ -37,6 +37,7 @@
         margin-right: auto;
         padding-right: 22px;
         padding-left: 15px;
+        width: auto;
     }
 
 }
@@ -70,6 +71,7 @@
     @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    padding-left: 0;
     
     }
     
@@ -85,6 +87,7 @@
     @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
+        
         top: 100%;
         left: 0;
         width: 100%;
@@ -93,4 +96,4 @@
             display: block;
         }
     }
-}
+}}
