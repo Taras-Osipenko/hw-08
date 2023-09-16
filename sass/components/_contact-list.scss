@@ -31,6 +31,10 @@ margin-right: 10px;
         // width: 138px; 
     }
     margin-left: auto;
+    @media screen and (min-width: 1170px) {
+        margin-left: 315px;
+       
+     }
 }
 
 

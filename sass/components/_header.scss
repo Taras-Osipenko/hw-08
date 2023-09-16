@@ -41,13 +41,7 @@
     }
    
 
-    @media screen and (min-width: 1170px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-       align-items: center;
-       
-    }
+  
 }
 
 .menu-button {
@@ -75,7 +69,8 @@
 }
 
 .menu-container {
-    
+
+   
     @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -103,5 +98,13 @@
         &.is-open {
             display: block;
         }
+    }
+
+    @media screen and (min-width: 1170px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+       align-items: center;
+      
     }
 }}
