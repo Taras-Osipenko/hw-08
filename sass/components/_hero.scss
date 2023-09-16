@@ -8,9 +8,9 @@
     margin-right: auto;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url();
+        url(//images/hero-background.jpg);
         @media screen and (max-width: 480px){
-            background-image: url(../images/Hero-background/Hero_img_480p.jpg)
+            background-image: url(//images/Hero_background/Hero-480p.jpg)
         }
     background-size: cover;
     background-color: #C4C4C4;
