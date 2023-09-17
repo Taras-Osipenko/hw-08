@@ -15,9 +15,11 @@
     @extend %conteiner;
     flex-wrap: wrap;
     align-items: center;
-    width: auto;
+  
     
-
+    @media screen and (min-width: 1170px) {
+        display: block;
+    }
 }
 
 .social-list {

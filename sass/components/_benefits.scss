@@ -14,8 +14,12 @@
 }
 
 .benefits {
-    // padding-top: 94px;
-    // padding-bottom: 94px;
+    @media screen and (min-width: 1170px) {
+       padding-top: 94px;
+       padding-bottom: 94px;
+        
+    } 
+   
 
     @media screen and (max-width: 1170px) {
         margin-top: 60px;
