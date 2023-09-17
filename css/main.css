@@ -176,7 +176,7 @@ body {
     display: block;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .header .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -228,7 +228,7 @@ body {
     margin-left: 88px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .contact-list {
     margin-left: 315px;
   }
@@ -238,7 +238,7 @@ body {
   margin-bottom: 10px;
   margin-right: 50px;
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .contact-list > li:not(:last-child) {
     margin-bottom: 0;
     margin-right: 30px;
@@ -317,7 +317,7 @@ body {
             flex-direction: column-reverse;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .contact-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -842,13 +842,13 @@ body {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1199px) {
   .benefits {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -889,7 +889,7 @@ body {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits__item {
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
@@ -905,7 +905,7 @@ body {
   padding-top: 0;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1199px) {
   .which-do {
     display: none;
   }
@@ -971,7 +971,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1200px) {
   .our-command {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -985,7 +985,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .our-command__conteiner {
     display: block;
   }
@@ -1049,7 +1049,7 @@ body {
     margin: -15px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .our-command__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1134,7 +1134,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 1199px) {
   .clients {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1165,7 +1165,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .clients__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -1247,7 +1247,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1169px) {
+@media screen and (min-width: 1199px) {
   .social-footer {
     margin-left: 70px;
   }
@@ -1260,7 +1260,7 @@ body {
     margin-bottom: 60px;
   }
 }
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 1199px) {
   .social-footer {
     width: 50%;
     display: -webkit-box;
@@ -1285,12 +1285,12 @@ body {
     margin-right: auto;
   }
 }
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 1199px) {
   .footer__contacts {
     width: 50%;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .footer__contacts {
     text-align: left;
   }
@@ -1345,13 +1345,13 @@ body {
   color: #FFFFFF;
   text-transform: uppercase;
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .footer-social__title {
     text-align: left;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .footer-address-list__item {
     text-align: left;
   }
@@ -1416,7 +1416,7 @@ body {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .footer-mailling__title {
     text-align: left;
   }
@@ -1452,7 +1452,7 @@ body {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .footer-mailling {
     margin-top: 60px;
     margin-left: auto;
@@ -1485,7 +1485,7 @@ body {
             align-items: center; /* Центрування по горизонталі */
   }
 }
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 1199px) {
   .footer-mailling__form {
     width: 100%;
     display: -webkit-box;
@@ -1517,7 +1517,7 @@ body {
     width: 94%;
   }
 }
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 1199px) {
   .footer-mailling__input {
     margin-bottom: 20px;
   }

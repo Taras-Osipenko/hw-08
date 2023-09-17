@@ -1,6 +1,6 @@
 .our-command {
     background: $btn-background-color;
-    @media screen and (max-width: 1170px) {
+    @media screen and (max-width: 1200px) {
         padding-top: 60px;
         padding-bottom: 60px;
                 
@@ -17,7 +17,7 @@
     align-items: center;
   
     
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
         display: block;
     }
 }
@@ -67,7 +67,7 @@
         margin: -15px;
 
     }
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
       flex-direction: row;
       flex-wrap: nowrap;

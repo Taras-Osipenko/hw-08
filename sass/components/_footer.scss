@@ -23,7 +23,7 @@
 }
 
 .social-footer {
-    @media screen and (min-width: 1169px) {
+    @media screen and (min-width: 1199px) {
         margin-left: 70px;   
     }
     
@@ -34,7 +34,7 @@
         margin-bottom: 60px;
     }
 
-    @media screen and (max-width: 1169px){
+    @media screen and (max-width: 1199px){
         width: 50%;
        display: flex;
        flex-direction: column;
@@ -50,11 +50,11 @@
     margin-right: auto;
 
     }
-    @media screen and (max-width: 1169px){
+    @media screen and (max-width: 1199px){
         width: 50%;
       
     }
- @media screen and (min-width: 1170px){
+ @media screen and (min-width: 1200px){
     text-align: left;
  }
 }
@@ -106,7 +106,7 @@
 
     text-transform: uppercase;
 
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
         text-align: left;
         
     }
@@ -114,7 +114,7 @@
 
 
 .footer-address-list__item {
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
         text-align: left;
     } 
 }
@@ -184,7 +184,7 @@
     color: $main-background-color;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
         text-align: left;
         
     }
@@ -210,7 +210,7 @@
         margin-right: auto;
 
     }
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
         margin-top: 60px;
         margin-left: auto;
         margin-right: 0;
@@ -230,7 +230,7 @@
         justify-content: center; /* Центрування по вертикалі */
         align-items: center; /* Центрування по горизонталі */
     }
-  @media screen and (max-width: 1169px) {
+  @media screen and (max-width: 1199px) {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -257,7 +257,7 @@
     @media screen and (max-width: 767px){
       width: 94%;
     }
-    @media screen and (max-width: 1169px) {
+    @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
 
     }

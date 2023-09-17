@@ -1,5 +1,5 @@
 .clients {
-    @media screen and (max-width: 1169px) {
+    @media screen and (max-width: 1199px) {
         padding-top: 60px;   
         padding-bottom: 60px;
     }
@@ -31,7 +31,7 @@
     margin: -15px;
     justify-content: center;
    
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
             }
 }

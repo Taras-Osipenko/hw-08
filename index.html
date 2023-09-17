@@ -255,8 +255,21 @@
                     <h2 class="our-command__title">Наша команда</h2>
                     <ul class="our-command__list">
                         <li class="our-command__item">
-                            <img src="./images/foto-1.jpg" alt="Усміхнений чоловік в окулярах"
-                            width="270" height="260" class="our-command__foto">
+                            <picture>
+                               <source
+                                srcset="
+                                ./images/Adaptive__img/Foto__1.webp 480p,
+                                ./images/Adaptive__img/Foto__1.webp 480p,
+                                ./images/Adaptive__img/Foto__1.webp 480p,
+                                " 
+                               
+                               />
+
+
+                                <img src="./images/foto-1.jpg" alt="Усміхнений чоловік в окулярах"
+                                 class="our-command__foto">
+                            </picture>
+                            
                             <div class="command-card">
                                 <h3 class="command-card__title">Ігор Дем'яненко</h3>
                                 <p class="command-card__text">Product Designer</p>
